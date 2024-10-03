@@ -73,73 +73,75 @@ document.addEventListener("DOMContentLoaded", () => {
     setClasses(0);
   });
   
-//   //  Javascript Toggle Menu
-//   document.querySelector(".navbar-toggle").addEventListener("click", function () {
-//     const navbarMobile = document.getElementById("navbar-mobile");
-//     const closeToggle = document.getElementById("close-toggle");
-//     const isExpanded = this.getAttribute("aria-expanded") === "true";
+  //  Javascript Toggle Menu
+  document.querySelector(".navbar-toggle").addEventListener("click", function () {
+    const navbarMobile = document.getElementById("navbar-mobile");
+    const closeToggle = document.getElementById("close-toggle");
+    const isExpanded = this.getAttribute("aria-expanded") === "true";
   
-//     closeToggle.setAttribute("aria-expanded", !isExpanded);
-//     navbarMobile.classList.toggle("active");
-//     document.body.classList.toggle("overflow-hidden");
-//   });
+    closeToggle.setAttribute("aria-expanded", !isExpanded);
+    navbarMobile.classList.toggle("active");
+    document.body.classList.toggle("overflow-hidden");
+  });
   
-//   // javascript toggle close
-//   document.querySelector(".close-toggle").addEventListener("click", function () {
-//     const navbarMobile = document.getElementById("navbar-mobile");
-//     const closeToggle = document.getElementById("close-toggle");
-//     const isExpanded = this.getAttribute("aria-expanded") === "true";
-//     closeToggle.setAttribute("aria-expanded", !isExpanded);
-//     navbarMobile.classList.toggle("active");
-//     document.body.classList.toggle("overflow-hidden");
-//   });
+  // javascript toggle close
+  document.querySelector(".close-toggle").addEventListener("click", function () {
+    const navbarMobile = document.getElementById("navbar-mobile");
+    const closeToggle = document.getElementById("close-toggle");
+    const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+    closeToggle.setAttribute("aria-expanded", !isExpanded);
+    navbarMobile.classList.toggle("active");
+    document.body.classList.toggle("overflow-hidden");
+  });
   
-//   //  accordion
-//   let accordion = document.getElementsByClassName("accordion");
+  //  accordion
+  let accordion = document.getElementsByClassName("accordion");
   
-//   for (let i = 0; i < accordion.length; i++) {
-//     accordion[i].addEventListener("click", function () {
-//       this.classList.toggle("active");
-//       let panel = this.nextElementSibling;
-//       if (panel.style.maxHeight) {
-//         panel.style.maxHeight = null;
-//       } else {
-//         panel.style.maxHeight = panel.scrollHeight + "px";
-//       }
-//     });
-//   }
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
   
 
 // Javascript Toggle Menu
-document.querySelector(".navbar-toggle").addEventListener("click", function(){
-  const navbarMobile = document.getElementById("navbar-mobile");
-  const closeToggle = document.getElementById("close-toggle");
-  const isExpanded = this.getAttribute("aria-expanded") === "true";
-  closeToggle.setAttribute("aria-expanded", !isExpanded);
-  navbarMobile.classList.toggle("active");
-  document.body.classList.toggle("overflow-hidden");
-})
+// document.querySelector(".navbar-toggle").addEventListener("click", function(){
+//   const navbarMobile = document.getElementById("navbar-mobile");
+//   const closeToggle = document.getElementById("close-toggle");
+//   const isExpanded = this.getAttribute("aria-expanded") === "true";
 
-// Javascript toggle close
-document.querySelector(".close-toggle").addEventListener("click", function(){
-  const navbarMobile = document.getElementById("navbar-mobile");
-  const closeToggle = document.getElementById("close-toggle");
-  const isExpanded = this.getAttribute("aria-expanded") === "true";
-  closeToggle.setAttribute("aria-expanded", !isExpanded);
-  navbarMobile.classList.toggle("active");
-  document.body.classList.toggle("overflow-hidden");
-})
+//   closeToggle.setAttribute("aria-expanded", !isExpanded);
+//   navbarMobile.classList.toggle("active");
+//   document.body.classList.toggle("overflow-hidden");
+// })
 
-// accordion
-let accordion = document.getElementsByClassName("accordion"); 
-for(let i = 0; i < accordion.length; i++ ){
-  accordion[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if(panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  })
-}
+// // Javascript toggle close
+// document.querySelector(".close-toggle").addEventListener("click", function(){
+//   const navbarMobile = document.getElementById("navbar-mobile");
+//   const closeToggle = document.getElementById("close-toggle");
+//   const isExpanded = this.getAttribute("aria-expanded") === "true";
+//   closeToggle.setAttribute("aria-expanded", !isExpanded);
+//   navbarMobile.classList.toggle("active");
+//   document.body.classList.toggle("overflow-hidden");
+// })
+
+// // accordion
+// let accordion = document.getElementsByClassName("accordion"); 
+// for(let i = 0; i < accordion.length; i++ ){
+//   accordion[i].addEventListener("click", function(){
+//     this.classList.toggle("active");
+//     let panel = this.nextElementSibling;
+//     if(panel.style.maxHeight){
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     }
+//   })
+// }

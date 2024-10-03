@@ -64,9 +64,10 @@
         font-family: "Helvetica";
         font-weight: 400;
     }
-.overflow-hidden{
+
+/* .overflow-hidden{
     overflow: hidden;
-}
+} */
 
 .container{
     max-width: 980px;
@@ -685,5 +686,10 @@ footer li{
 
     .product-content p{
         font-size: 18px;
+        padding: 0 24px;
+    }
+
+    .product-content .check{
+        display: none;
     }
 }
